@@ -3,112 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scoops & Smiles | Ice Cream Shop</title>
+  <title>Scoops & Smiles | Elegant Ice Cream Shop</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #fff7fa;
+      font-family: 'Poppins', sans-serif;
+      background: #fffafc;
       color: #333;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1497051788611-2c64812349d2?auto=format&fit=crop&w=1350&q=80') 
+      background: linear-gradient(to right, rgba(255,182,193,0.7), rgba(255,223,211,0.7)),
+        url('https://images.unsplash.com/photo-1497051788611-2c64812349d2?auto=format&fit=crop&w=1350&q=80') 
         no-repeat center center/cover;
-      height: 60vh;
+      height: 65vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #fff;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
     }
 
     header h1 {
       font-size: 4rem;
       margin: 0;
-      color: #ff66b2;
-      text-shadow: 2px 2px 10px white;
+      font-family: 'Playfair Display', serif;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
     }
 
     header p {
       font-size: 1.5rem;
-      margin: 10px 0;
-      background: rgba(255, 255, 255, 0.6);
-      padding: 5px 15px;
-      border-radius: 12px;
-      color: #ff3399;
+      margin-top: 15px;
+      background: rgba(255,255,255,0.7);
+      padding: 8px 18px;
+      border-radius: 20px;
+      color: #cc3366;
     }
 
     nav {
-      background: #ff99cc;
+      background: #cc3366;
       text-align: center;
       padding: 1rem;
       position: sticky;
       top: 0;
+      z-index: 10;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
       margin: 0 20px;
-      font-weight: bold;
+      font-weight: 500;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #ffe6f0;
+      color: #ffd6e0;
     }
 
     .section {
-      padding: 3rem 2rem;
+      padding: 4rem 2rem;
       text-align: center;
+      max-width: 1200px;
+      margin: auto;
     }
 
     .section h2 {
       margin-bottom: 1rem;
-      font-size: 2.5rem;
-      color: #ff3399;
+      font-size: 2.8rem;
+      font-family: 'Playfair Display', serif;
+      color: #cc3366;
+    }
+
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #555;
     }
 
     .menu-items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
     }
 
     .menu-card {
       background: #fff;
-      padding: 1.5rem;
       border-radius: 15px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      overflow: hidden;
+      transition: transform 0.3s ease;
     }
 
     .menu-card:hover {
-      transform: scale(1.05);
+      transform: translateY(-8px);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
 
     .menu-card h3 {
-      margin-top: 0;
-      color: #ff3399;
+      margin: 1rem 0 0.5rem;
+      color: #cc3366;
+    }
+
+    .menu-card p {
+      padding: 0 1rem 1rem;
+      font-size: 0.95rem;
+      color: #555;
     }
 
     footer {
-      background: #ff99cc;
+      background: #cc3366;
       color: #fff;
       text-align: center;
       padding: 1.5rem;
       margin-top: 2rem;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Hero Section -->
   <header>
     <h1>Scoops & Smiles</h1>
-    <p>Happiness served in every scoop 🍦💕</p>
+    <p>Elegant flavors crafted with love 🍨✨</p>
   </header>
 
   <!-- Navigation -->
@@ -122,35 +149,39 @@
   <!-- About Section -->
   <section class="section" id="about">
     <h2>Welcome to Scoops & Smiles</h2>
-    <p>We serve creamy, dreamy ice creams made with love. From classic vanilla to exotic flavors, every bite brings joy!</p>
+    <p>Indulge in our handcrafted ice creams made from the finest ingredients. Each scoop blends elegance with joy — bringing a touch of sweetness to your day.</p>
   </section>
 
   <!-- Menu Section -->
   <section class="section" id="menu">
-    <h2>Our Flavors</h2>
+    <h2>Our Signature Flavors</h2>
     <div class="menu-items">
       <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1589712189275-5b9a6bb49e97?auto=format&fit=crop&w=800&q=80" alt="Strawberry Ice Cream">
         <h3>Strawberry Swirl</h3>
-        <p>Sweet strawberries blended into velvety cream.</p>
+        <p>Fresh strawberries folded into creamy perfection with a fruity twist.</p>
       </div>
       <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?auto=format&fit=crop&w=800&q=80" alt="Chocolate Ice Cream">
         <h3>Chocolate Fudge</h3>
-        <p>Rich, indulgent chocolate with gooey fudge chunks.</p>
+        <p>Rich Belgian chocolate ice cream swirled with decadent fudge ribbons.</p>
       </div>
       <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80" alt="Mango Ice Cream">
         <h3>Mango Delight</h3>
-        <p>Tropical mangoes bringing summer in every bite.</p>
+        <p>Exotic Alphonso mangoes blended into a creamy tropical scoop.</p>
       </div>
       <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1625940270068-1b9c06d0a0a9?auto=format&fit=crop&w=800&q=80" alt="Mint Ice Cream">
         <h3>Mint Choco Chip</h3>
-        <p>Refreshing mint ice cream dotted with chocolate chips.</p>
+        <p>Cool mint ice cream studded with crunchy dark chocolate chips.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Scoops & Smiles | Life’s better with ice cream 🍨✨</p>
+    <p>&copy; 2025 Scoops & Smiles | Taste the elegance in every scoop 🍧</p>
   </footer>
 </body>
 </html>
