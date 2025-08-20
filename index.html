@@ -3,38 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloom Café</title>
+  <title>Tranquil Tea House</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #fff8f0;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background-color: #f9fdf6;
+      color: #2f3e2f;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1350&q=80') 
+        no-repeat center center/cover;
       height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: white;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     }
 
     header h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
       margin: 0;
+      font-family: 'Georgia', serif;
     }
 
     header p {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       margin: 10px 0;
+      font-style: italic;
     }
 
     nav {
-      background: #6b4226;
+      background: #4c7c59;
       text-align: center;
       padding: 1rem;
       position: sticky;
@@ -50,7 +53,7 @@
     }
 
     nav a:hover {
-      color: #ffd28c;
+      color: #cfe8d5;
     }
 
     .section {
@@ -61,7 +64,7 @@
     .section h2 {
       margin-bottom: 1rem;
       font-size: 2.5rem;
-      color: #6b4226;
+      color: #4c7c59;
     }
 
     .menu-items {
@@ -76,15 +79,20 @@
       padding: 1.5rem;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .menu-card:hover {
+      transform: scale(1.05);
     }
 
     .menu-card h3 {
       margin-top: 0;
-      color: #6b4226;
+      color: #4c7c59;
     }
 
     footer {
-      background: #6b4226;
+      background: #4c7c59;
       color: #fff;
       text-align: center;
       padding: 1.5rem;
@@ -95,8 +103,8 @@
 <body>
   <!-- Hero Section -->
   <header>
-    <h1>Bloom Café</h1>
-    <p>Where every cup feels like home ☕✨</p>
+    <h1>Tranquil Tea House</h1>
+    <p>Find peace in every sip 🍵✨</p>
   </header>
 
   <!-- Navigation -->
@@ -109,36 +117,37 @@
 
   <!-- About Section -->
   <section class="section" id="about">
-    <h2>Welcome to Bloom Café</h2>
-    <p>We serve freshly brewed coffee, artisanal pastries, and cozy vibes all day long. Come sip, relax, and bloom with us.</p>
+    <h2>Welcome to Tranquil Tea House</h2>
+    <p>We craft soothing blends of herbal, green, and classic teas in a serene atmosphere. 
+       A place where every cup is a moment of mindfulness.</p>
   </section>
 
   <!-- Menu Section -->
   <section class="section" id="menu">
-    <h2>Our Menu</h2>
+    <h2>Our Tea Selection</h2>
     <div class="menu-items">
       <div class="menu-card">
-        <h3>Latte</h3>
-        <p>Creamy and smooth with a hint of sweetness.</p>
+        <h3>Green Tea</h3>
+        <p>Refreshing and packed with antioxidants for a healthy boost.</p>
       </div>
       <div class="menu-card">
-        <h3>Cappuccino</h3>
-        <p>Perfectly balanced espresso with frothy milk.</p>
+        <h3>Chamomile Tea</h3>
+        <p>Relaxing floral infusion perfect for calming the mind.</p>
       </div>
       <div class="menu-card">
-        <h3>Mocha</h3>
-        <p>Chocolatey delight blended with rich espresso.</p>
+        <h3>Masala Chai</h3>
+        <p>Aromatic Indian spiced tea with warmth in every sip.</p>
       </div>
       <div class="menu-card">
-        <h3>Croissant</h3>
-        <p>Flaky, buttery goodness baked fresh every morning.</p>
+        <h3>Jasmine Tea</h3>
+        <p>Delicate green tea scented with fresh jasmine blossoms.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Bloom Café | Made with ❤ and Coffee</p>
+    <p>&copy; 2025 Tranquil Tea House | Breathe. Sip. Relax. 🌿</p>
   </footer>
 </body>
 </html>
