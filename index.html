@@ -3,50 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Website</title>
+  <title>Bloom Café</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
     }
+
     header {
-      background: #333;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
     }
-    nav {
+
+    header h1 {
+      font-size: 4rem;
       margin: 0;
-      padding: 0.5rem;
-      background: #444;
-      text-align: center;
     }
+
+    header p {
+      font-size: 1.5rem;
+      margin: 10px 0;
+    }
+
+    nav {
+      background: #6b4226;
+      text-align: center;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+    }
+
     nav a {
       color: #fff;
-      margin: 0 15px;
       text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
     }
-    main {
-      padding: 2rem;
+
+    nav a:hover {
+      color: #ffd28c;
     }
+
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      color: #6b4226;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .menu-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-card h3 {
+      margin-top: 0;
+      color: #6b4226;
+    }
+
     footer {
-      background: #333;
+      background: #6b4226;
       color: #fff;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem;
       margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+  <!-- Hero Section -->
   <header>
-    <h1>Welcome to My Website</h1>
+    <h1>Bloom Café</h1>
+    <p>Where every cup feels like home ☕✨</p>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
+    <a href="#">Menu</a>
     <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="
+    <a href="#">Contact</a>
+  </nav>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>Welcome to Bloom Café</h2>
+    <p>We serve freshly brewed coffee, artisanal pastries, and cozy vibes all day long. Come sip, relax, and bloom with us.</p>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <h3>Latte</h3>
+        <p>Creamy and smooth with a hint of sweetness.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Cappuccino</h3>
+        <p>Perfectly balanced espresso with frothy milk.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Mocha</h3>
+        <p>Chocolatey delight blended with rich espresso.</p>
+      </div>
+      <div class="menu-card">
+        <h3>Croissant</h3>
+        <p>Flaky, buttery goodness baked fresh every morning.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bloom Café | Made with ❤ and Coffee</p>
+  </footer>
+</body>
+</html>
