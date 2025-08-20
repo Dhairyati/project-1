@@ -3,46 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pole Position | Formula 1 Hub</title>
+  <title>Scoops & Smiles | Ice Cream Shop</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Arial Black', sans-serif;
-      background-color: #0d0d0d;
-      color: #f1f1f1;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff7fa;
+      color: #333;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1350&q=80') 
+      background: url('https://images.unsplash.com/photo-1497051788611-2c64812349d2?auto=format&fit=crop&w=1350&q=80') 
         no-repeat center center/cover;
-      height: 70vh;
+      height: 60vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: white;
-      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+      color: #fff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
     }
 
     header h1 {
       font-size: 4rem;
       margin: 0;
-      letter-spacing: 3px;
-      color: #ff1e00;
+      color: #ff66b2;
+      text-shadow: 2px 2px 10px white;
     }
 
     header p {
       font-size: 1.5rem;
       margin: 10px 0;
+      background: rgba(255, 255, 255, 0.6);
+      padding: 5px 15px;
+      border-radius: 12px;
+      color: #ff3399;
     }
 
     nav {
-      background: #1a1a1a;
+      background: #ff99cc;
       text-align: center;
       padding: 1rem;
       position: sticky;
       top: 0;
-      border-bottom: 2px solid #ff1e00;
     }
 
     nav a {
@@ -54,7 +57,7 @@
     }
 
     nav a:hover {
-      color: #ff1e00;
+      color: #ffe6f0;
     }
 
     .section {
@@ -64,92 +67,90 @@
 
     .section h2 {
       margin-bottom: 1rem;
-      font-size: 2.8rem;
-      color: #ff1e00;
+      font-size: 2.5rem;
+      color: #ff3399;
     }
 
-    .card-container {
+    .menu-items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
 
-    .card {
-      background: #1a1a1a;
+    .menu-card {
+      background: #fff;
       padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(255, 30, 0, 0.2);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       transition: transform 0.2s;
     }
 
-    .card:hover {
+    .menu-card:hover {
       transform: scale(1.05);
     }
 
-    .card h3 {
+    .menu-card h3 {
       margin-top: 0;
-      color: #ff1e00;
+      color: #ff3399;
     }
 
     footer {
-      background: #1a1a1a;
+      background: #ff99cc;
       color: #fff;
       text-align: center;
       padding: 1.5rem;
       margin-top: 2rem;
-      border-top: 2px solid #ff1e00;
     }
   </style>
 </head>
 <body>
   <!-- Hero Section -->
   <header>
-    <h1>Pole Position</h1>
-    <p>Your Formula 1 Hub for Speed & Passion 🏎️🔥</p>
+    <h1>Scoops & Smiles</h1>
+    <p>Happiness served in every scoop 🍦💕</p>
   </header>
 
   <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
-    <a href="#">Races</a>
-    <a href="#">Teams</a>
-    <a href="#">Drivers</a>
-    <a href="#">Standings</a>
+    <a href="#">Flavors</a>
+    <a href="#">Specials</a>
+    <a href="#">Contact</a>
   </nav>
 
   <!-- About Section -->
   <section class="section" id="about">
-    <h2>Welcome to Pole Position</h2>
-    <p>Stay ahead of the curve with the latest Formula 1 news, race schedules, driver stats, and team updates — all in one pit stop.</p>
+    <h2>Welcome to Scoops & Smiles</h2>
+    <p>We serve creamy, dreamy ice creams made with love. From classic vanilla to exotic flavors, every bite brings joy!</p>
   </section>
 
-  <!-- Featured Section -->
-  <section class="section" id="races">
-    <h2>Upcoming Grand Prix</h2>
-    <div class="card-container">
-      <div class="card">
-        <h3>Monaco GP</h3>
-        <p>Iconic street circuit. Pure prestige. Don’t blink.</p>
+  <!-- Menu Section -->
+  <section class="section" id="menu">
+    <h2>Our Flavors</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <h3>Strawberry Swirl</h3>
+        <p>Sweet strawberries blended into velvety cream.</p>
       </div>
-      <div class="card">
-        <h3>Silverstone GP</h3>
-        <p>The home of British motorsport. High-speed corners galore.</p>
+      <div class="menu-card">
+        <h3>Chocolate Fudge</h3>
+        <p>Rich, indulgent chocolate with gooey fudge chunks.</p>
       </div>
-      <div class="card">
-        <h3>Singapore GP</h3>
-        <p>Thrilling night race under the lights of Marina Bay.</p>
+      <div class="menu-card">
+        <h3>Mango Delight</h3>
+        <p>Tropical mangoes bringing summer in every bite.</p>
       </div>
-      <div class="card">
-        <h3>Monza GP</h3>
-        <p>The Temple of Speed. Maximum velocity, maximum passion.</p>
+      <div class="menu-card">
+        <h3>Mint Choco Chip</h3>
+        <p>Refreshing mint ice cream dotted with chocolate chips.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Pole Position | Driven by Speed & Innovation 🏁</p>
+    <p>&copy; 2025 Scoops & Smiles | Life’s better with ice cream 🍨✨</p>
   </footer>
 </body>
 </html>
