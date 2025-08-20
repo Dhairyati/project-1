@@ -3,57 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tranquil Tea House</title>
+  <title>Pole Position | Formula 1 Hub</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #f9fdf6;
-      color: #2f3e2f;
+      font-family: 'Arial Black', sans-serif;
+      background-color: #0d0d0d;
+      color: #f1f1f1;
     }
 
     header {
-      background: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?auto=format&fit=crop&w=1350&q=80') 
+      background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=1350&q=80') 
         no-repeat center center/cover;
-      height: 60vh;
+      height: 70vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: white;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
     }
 
     header h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
       margin: 0;
-      font-family: 'Georgia', serif;
+      letter-spacing: 3px;
+      color: #ff1e00;
     }
 
     header p {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       margin: 10px 0;
-      font-style: italic;
     }
 
     nav {
-      background: #4c7c59;
+      background: #1a1a1a;
       text-align: center;
       padding: 1rem;
       position: sticky;
       top: 0;
+      border-bottom: 2px solid #ff1e00;
     }
 
     nav a {
       color: #fff;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 20px;
       font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #cfe8d5;
+      color: #ff1e00;
     }
 
     .section {
@@ -63,91 +64,92 @@
 
     .section h2 {
       margin-bottom: 1rem;
-      font-size: 2.5rem;
-      color: #4c7c59;
+      font-size: 2.8rem;
+      color: #ff1e00;
     }
 
-    .menu-items {
+    .card-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 1.5rem;
       margin-top: 2rem;
     }
 
-    .menu-card {
-      background: #fff;
+    .card {
+      background: #1a1a1a;
       padding: 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(255, 30, 0, 0.2);
       transition: transform 0.2s;
     }
 
-    .menu-card:hover {
+    .card:hover {
       transform: scale(1.05);
     }
 
-    .menu-card h3 {
+    .card h3 {
       margin-top: 0;
-      color: #4c7c59;
+      color: #ff1e00;
     }
 
     footer {
-      background: #4c7c59;
+      background: #1a1a1a;
       color: #fff;
       text-align: center;
       padding: 1.5rem;
       margin-top: 2rem;
+      border-top: 2px solid #ff1e00;
     }
   </style>
 </head>
 <body>
   <!-- Hero Section -->
   <header>
-    <h1>Tranquil Tea House</h1>
-    <p>Find peace in every sip 🍵✨</p>
+    <h1>Pole Position</h1>
+    <p>Your Formula 1 Hub for Speed & Passion 🏎️🔥</p>
   </header>
 
   <!-- Navigation -->
   <nav>
     <a href="#">Home</a>
-    <a href="#">Menu</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="#">Races</a>
+    <a href="#">Teams</a>
+    <a href="#">Drivers</a>
+    <a href="#">Standings</a>
   </nav>
 
   <!-- About Section -->
   <section class="section" id="about">
-    <h2>Welcome to Tranquil Tea House</h2>
-    <p>We craft soothing blends of herbal, green, and classic teas in a serene atmosphere. 
-       A place where every cup is a moment of mindfulness.</p>
+    <h2>Welcome to Pole Position</h2>
+    <p>Stay ahead of the curve with the latest Formula 1 news, race schedules, driver stats, and team updates — all in one pit stop.</p>
   </section>
 
-  <!-- Menu Section -->
-  <section class="section" id="menu">
-    <h2>Our Tea Selection</h2>
-    <div class="menu-items">
-      <div class="menu-card">
-        <h3>Green Tea</h3>
-        <p>Refreshing and packed with antioxidants for a healthy boost.</p>
+  <!-- Featured Section -->
+  <section class="section" id="races">
+    <h2>Upcoming Grand Prix</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Monaco GP</h3>
+        <p>Iconic street circuit. Pure prestige. Don’t blink.</p>
       </div>
-      <div class="menu-card">
-        <h3>Chamomile Tea</h3>
-        <p>Relaxing floral infusion perfect for calming the mind.</p>
+      <div class="card">
+        <h3>Silverstone GP</h3>
+        <p>The home of British motorsport. High-speed corners galore.</p>
       </div>
-      <div class="menu-card">
-        <h3>Masala Chai</h3>
-        <p>Aromatic Indian spiced tea with warmth in every sip.</p>
+      <div class="card">
+        <h3>Singapore GP</h3>
+        <p>Thrilling night race under the lights of Marina Bay.</p>
       </div>
-      <div class="menu-card">
-        <h3>Jasmine Tea</h3>
-        <p>Delicate green tea scented with fresh jasmine blossoms.</p>
+      <div class="card">
+        <h3>Monza GP</h3>
+        <p>The Temple of Speed. Maximum velocity, maximum passion.</p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Tranquil Tea House | Breathe. Sip. Relax. 🌿</p>
+    <p>&copy; 2025 Pole Position | Driven by Speed & Innovation 🏁</p>
   </footer>
 </body>
 </html>
